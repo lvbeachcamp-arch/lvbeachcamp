@@ -133,6 +133,17 @@ a { text-decoration: none; color: inherit; }
   justify-content: center;
   flex-wrap: wrap;
 }
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(255,247,230,0.25));
+  z-index: 0;
+}
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
 
 /* 🏕️ CARDS */
 .card {
