@@ -1,70 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rooms &amp; Camping | LV Beach Camp</title>
-<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accommodation | LV Beach Camp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="nav">
-  <div class="container inner">
-    <a href="index.html" class="brand">
-      <img src="images/logo.jpg" alt="LV Beach Camp logo">
-      <span class="name">LV Beach Camp</span>
-    </a>
-    <nav class="menu">
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-      <a class="cta" href="booking.html">Reserve Your Spot</a>
-    </nav>
-  </div>
-</header>
-
-<section class="section">
-  <div class="container">
-    <h2 class="title">Rooms &amp; Camping</h2>
-    <p class="subtitle">Choose what fits your vibe</p>
-
-    <div class="grid grid-3">
-      <article class="card">
-        <div class="image"><img src="images/rooms/rooma.jpg" alt="Rooms A &amp; B"></div>
-        <div class="body">
-          <h3>Rooms A &amp; B</h3>
-          <p class="meta">2–6 pax • A/C • Private T&amp;B</p>
-          <a class="btn primary" href="booking.html">Start Your Getaway</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="image"><img src="images/rooms/teepee.jpg" alt="Teepee House"></div>
-        <div class="body">
-          <h3>Teepee House</h3>
-          <p class="meta">2 pax • Fan • Optional A/C</p>
-          <a class="btn primary" href="booking.html">Start Your Getaway</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="image"><img src="images/rooms/mediumcampingtent.jpg" alt="Camping Tents"></div>
-        <div class="body">
-          <h3>Camping Tents</h3>
-          <p class="meta">Small / Medium • With bedding</p>
-          <a class="btn primary" href="booking.html">Start Your Getaway</a>
-        </div>
-      </article>
+  <!-- 🌴 Header -->
+  <header class="header">
+    <div class="nav-container">
+      <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo" class="logo">
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accommodation.html" class="active">Accommodation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="actions" style="margin-top:18px">
-      <a class="btn ghost" href="index.html#islands">See Island Tours</a>
+  <!-- 🏖️ Hero Section -->
+  <section class="accommodation-hero">
+    <img src="images/branding/banner.jpg" alt="LV Beach Camp Banner" class="hero-img">
+    <div class="overlay">
+      <h1>Our Accommodation</h1>
+      <p>Choose your stay and experience comfort by the sea 🌊</p>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- 🛖 Rooms Section -->
+  <section class="rooms-list">
+    <div class="container">
+      <div class="room-item">
+        <img src="images/rooms/bahaykubo.jpg" alt="Bahay Kubo Beach Front">
+        <div class="room-info">
+          <h2>Bahay Kubo Beach Front</h2>
+          <p>Perfect for couples or small families. Located steps away from the shoreline, this nipa hut offers an authentic island experience.</p>
+          <p><strong>₱1,450 (Fri–Sun & Holidays)</strong> | ₱1,200 (Mon–Thu)</p>
+          <a href="booking.html" class="btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <img src="images/rooms/rooma.jpg" alt="Native House A & B">
+        <div class="room-info">
+          <h2>Native House A & B</h2>
+          <p>Designed for friends or small groups. Enjoy your private veranda and cozy space made with native materials.</p>
+          <p><strong>₱950 (Fri–Sun & Holidays)</strong> | ₱850 (Mon–Thu)</p>
+          <a href="booking.html" class="btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <img src="images/rooms/teepee.jpg" alt="Teepee House">
+        <div class="room-info">
+          <h2>Teepee House</h2>
+          <p>A fun and unique stay for families and friends. Experience beach glamping with a teepee-style setup near the shore.</p>
+          <p><strong>₱1,200 (Fri–Sun & Holidays)</strong> | ₱1,000 (Mon–Thu)</p>
+          <a href="booking.html" class="btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <img src="images/rooms/mediumcampingtent.jpg" alt="Camping Tent">
+        <div class="room-info">
+          <h2>Camping Tent</h2>
+          <p>Ideal for backpackers and adventure seekers. Sleep under the stars and wake up to the sound of gentle waves.</p>
+          <p><strong>₱500</strong> for 3–4 guests</p>
+          <a href="booking.html" class="btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <img src="images/rooms/newroomrates.jpg" alt="Room Rates Overview">
+        <div class="room-info">
+          <h2>Room Rates Overview</h2>
+          <p>All accommodations come with free use of beach amenities and access to common areas. Extra mattresses available upon request.</p>
+          <a href="booking.html" class="btn-secondary">View Booking Page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌅 Footer -->
+  <footer>
+    <p>© 2025 LV Beach Camp | Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</p>
+    <p><a href="https://facebook.com/lvbeachcamp" target="_blank">Connect with us on Facebook</a></p>
+  </footer>
 
 </body>
 </html>
-
