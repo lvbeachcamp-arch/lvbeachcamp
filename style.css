@@ -111,11 +111,10 @@ a { text-decoration: none; color: inherit; }
 .hero .bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(255,247,230,0.25)),
-              url('images/branding/banner.jpg') center/cover no-repeat;
-  filter: brightness(0.9) saturate(110%);
+  background: linear-gradient(180deg, rgba(255,247,230,0.4), rgba(255,247,230,0.6));
   z-index: -1;
 }
+
 
 .hero .content {
   position: relative;
