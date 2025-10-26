@@ -825,3 +825,53 @@ footer a {
 .redirect a:hover {
   background: #b55213;
 }
+/* 📱 Responsive Adjustments for Hero Section */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 65vh;
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: clamp(26px, 7vw, 38px);
+    line-height: 1.2;
+  }
+
+  .hero .tag {
+    font-size: clamp(14px, 4vw, 18px);
+    line-height: 1.4;
+    margin-top: 6px;
+  }
+
+  .hero .actions {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .hero .btn-primary {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}
+
+/* 🌴 Ultra-small screens (below 420px) */
+@media (max-width: 420px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero .tag {
+    font-size: 15px;
+  }
+
+  .hero .btn-primary {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
