@@ -96,6 +96,7 @@ a { text-decoration: none; color: inherit; }
 .cta:hover { background: #d78f10; }
 
 /* 🏖️ HERO SECTION */
+/* 🏖️ HERO SECTION (fixed) */
 .hero {
   position: relative;
   min-height: 72vh;
@@ -103,47 +104,137 @@ a { text-decoration: none; color: inherit; }
   place-items: center;
   text-align: center;
   color: #2e1f17;
+  background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(249,246,238,0.6));
   overflow: hidden;
 }
-.hero img {
+
+.hero .bg {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(255,247,230,0.25)),
+              url('images/branding/banner.jpg') center/cover no-repeat;
+  filter: brightness(0.9) saturate(110%);
   z-index: -1;
-  filter: brightness(0.95) saturate(110%);
 }
 
-.hero .content { position: relative; padding: 40px 18px; }
+.hero .content {
+  position: relative;
+  padding: 40px 18px;
+}
+
 .hero h1 {
   font-family: 'Merienda', cursive;
   font-size: clamp(32px, 6vw, 52px);
   margin-bottom: 8px;
+  color: #4e342e;
 }
+
 .hero .tag {
   font-family: 'Lucida Calligraphy', cursive;
   font-size: clamp(16px, 3.2vw, 22px);
   opacity: 0.95;
+  color: #2e1f17;
 }
-.hero .actions {
+
+.actions {
   margin-top: 18px;
   display: flex;
   gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(255,247,230,0.25));
-  z-index: 0;
+
+/* ✨ Buttons */
+.btn-primary {
+  background: #d2691e;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
-.hero .content {
-  position: relative;
-  z-index: 1;
+
+.btn-primary:hover {
+  background: #4e342e;
 }
+
+/* 🌴 Intro */
+.intro {
+  background: #fffaf0;
+  padding: 60px 20px;
+  text-align: center;
+}
+.intro h2 {
+  color: #d2691e;
+  margin-bottom: 10px;
+}
+.intro p {
+  color: #3d2b1f;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 🏕️ Fade-in Banner Section */
+.fade-banner {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+  text-align: center;
+  background: #fffaf0;
+  padding: 40px 0;
+}
+.fade-banner img {
+  width: 95%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.fade-banner.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🌊 Footer */
+footer {
+  background: linear-gradient(180deg, #4e342e 0%, #d2691e 100%);
+  color: #fffaf0;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #fffaf0;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.fade-credit {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.fade-credit.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Responsive tweaks */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 65vh;
+  }
+  .fade-banner img {
+    width: 100%;
+  }
+}
+
 
 /* 🏕️ CARDS */
 .card {
