@@ -372,27 +372,98 @@ footer .foot {
   margin-top: 30px;
 }
 
-/* 💳 Payment */
+/* 💳 Payment Section */
 .payment-options {
   text-align: center;
-  padding: 50px 20px;
-  background: #fdf5e6;
+  padding: 60px 20px;
+  background: #fffaf0;
 }
+
+.payment-options h2 {
+  font-size: 2rem;
+  color: #4e342e;
+  margin-bottom: 8px;
+}
+
+.payment-options p {
+  color: #5c4033;
+  margin-bottom: 40px;
+}
+
 .payment-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  justify-items: center;
 }
+
 .payment-card {
   background: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.payment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
 .payment-card img {
-  width: 150px;
-  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+}
+
+.payment-card h3 {
+  color: #4e342e;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* 🏠 Room & Menu Images */
+.room-menu-section img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .payment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .payment-card {
+    max-width: 200px;
+    padding: 15px;
+  }
+
+  .room-menu-section img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-card {
+    max-width: 260px;
+  }
+
+  .room-menu-section img {
+    max-width: 100%;
+  }
 }
 
 /* 🍴 Food Menu */
