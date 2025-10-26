@@ -618,3 +618,85 @@ footer a {
     border-radius: 12px 12px 0 0;
   }
 }
+/* 🖼️ Gallery Page */
+.gallery-hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.gallery-hero .hero-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.gallery-hero .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.45);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+/* 🍴 Food Menu */
+.food-gallery {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fffaf0;
+}
+
+/* 🪸 Island Tours */
+.island-gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+.island-gallery .island-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.island-gallery .island-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.island-gallery .island-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.island-gallery .island-card h3 {
+  margin-top: 8px;
+  color: #a0522d;
+}
+
+/* 💳 QR Gallery */
+.qr-gallery {
+  text-align: center;
+  background: #fff8f0;
+  padding: 60px 20px;
+}
+.qr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.qr-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.qr-card img {
+  width: 160px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.qr-card h3 {
+  color: #a0522d;
+}
