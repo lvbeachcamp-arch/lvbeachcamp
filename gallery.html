@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gallery | LV Beach Camp</title>
-<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | LV Beach Camp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="nav">
-  <div class="container inner">
-    <a href="index.html" class="brand">
-      <img src="images/logo.jpg" alt="LV Beach Camp logo">
-      <span class="name">LV Beach Camp</span>
-    </a>
-    <nav class="menu">
-      <a href="about.html">About</a>
-      <a href="accommodation.html">Rooms</a>
-      <a href="contact.html">Contact</a>
-      <a class="cta" href="booking.html">Reserve Your Spot</a>
-    </nav>
-  </div>
-</header>
-
-<section class="section">
-  <div class="container">
-    <h2 class="title">Gallery</h2>
-    <p class="subtitle">Rooms • Islands • Menu • Payments</p>
-
-    <div class="grid grid-3" style="margin-top:10px">
-      <article class="card">
-        <div class="image"><img src="images/rooms/rooma.jpg" alt="Room A/B"></div>
-        <div class="body">
-          <h3>Rooms</h3>
-          <a class="btn primary" href="booking.html">Reserve Your Spot</a>
-        </div>
-      </article>
-
-      <article class="card" id="islands">
-        <div class="image"><img src="images/islands/blue-lagoon.jpg" alt="Blue Lagoon"></div>
-        <div class="body">
-          <h3>Islands</h3>
-          <a class="btn primary" href="booking.html">Book Your Adventure</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="image"><img src="images/menu/basicfoodmenu.jpg" alt="Menu"></div>
-        <div class="body">
-          <h3>Menu</h3>
-          <a class="btn ghost" href="contact.html">Message for Orders</a>
-        </div>
-      </article>
+  <!-- 🌴 Header -->
+  <header class="header">
+    <div class="nav-container">
+      <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo" class="logo">
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <h3 style="margin-top:26px">Payment Options</h3>
-    <div class="grid grid-3" style="margin-top:10px">
-      <article class="card">
-        <div class="image"><img src="images/qr/qr-gcash.png" alt="GCash QR"></div>
-        <div class="body"><p>GCash</p></div>
-      </article>
-
-      <article class="card">
-        <div class="image"><img src="images/qr/qr-paymaya.png" alt="PayMaya QR"></div>
-        <div class="body"><p>PayMaya</p></div>
-      </article>
-
-      <article class="card">
-        <div class="image"><img src="images/qr/qr-pnb.png" alt="PNB QR"></div>
-        <div class="body"><p>PNB</p></div>
-      </article>
+  <!-- 🏖️ Hero -->
+  <section class="gallery-hero">
+    <img src="images/branding/banner.jpg" alt="LV Beach Camp Banner" class="hero-img">
+    <div class="overlay">
+      <h1>Gallery</h1>
+      <p>Take a glimpse of paradise in Southern Leyte 🌺</p>
     </div>
+  </section>
 
-    <div class="actions" style="margin-top:18px">
-      <a class="btn primary" href="booking.html">Reserve Your Spot</a>
+  <!-- 🍴 Food Menu -->
+  <section class="food-gallery">
+    <h2>Our Basic Food Menu</h2>
+    <img src="images/menu/basicfoodmenu.jpg" alt="Food Menu" class="menu-image">
+  </section>
+
+  <!-- 🪸 Island Tours -->
+  <section class="island-gallery">
+    <h2>Island Tour Destinations</h2>
+    <div class="island-grid">
+      <div class="island-card">
+        <img src="images/islands/san-pedro-island.jpg" alt="San Pedro Island">
+        <h3>San Pedro Island</h3>
+      </div>
+      <div class="island-card">
+        <img src="images/islands/san-pablo-island.jpg" alt="San Pablo Island">
+        <h3>San Pablo Island</h3>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- 💳 Payment QRs -->
+  <section class="qr-gallery">
+    <h2>Payment QR Codes</h2>
+    <p>We accept multiple payment methods for your convenience.</p>
+    <div class="qr-grid">
+      <div class="qr-card"><img src="images/qr/qr-gcash.png" alt="GCash QR"><h3>GCash</h3></div>
+      <div class="qr-card"><img src="images/qr/qr-paymaya.png" alt="PayMaya QR"><h3>PayMaya</h3></div>
+      <div class="qr-card"><img src="images/qr/qr-bdo.png" alt="BDO QR"><h3>BDO</h3></div>
+      <div class="qr-card"><img src="images/qr/qr-pnb.png" alt="PNB QR"><h3>PNB</h3></div>
+    </div>
+  </section>
+
+  <!-- 🌊 CTA -->
+  <section class="cta-section">
+    <h2>Ready to visit LV Beach Camp?</h2>
+    <p>Book your stay now and experience island life the LV way!</p>
+    <a href="booking.html" class="btn-primary">Plan Your Stay</a>
+  </section>
+
+  <!-- 🌅 Footer -->
+  <footer>
+    <p>© 2025 LV Beach Camp | Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</p>
+    <p><a href="https://facebook.com/lvbeachcamp" target="_blank">Follow us on Facebook</a></p>
+  </footer>
 
 </body>
 </html>
-
