@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LV Beach Camp | Southern Leyte</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <!-- 🌴 Header -->
+<body>
+  <!-- 🌴 Navigation -->
   <header class="header">
     <div class="nav-container">
-      <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo" class="logo">
+      <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo" class="logo" />
       <nav class="navbar">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -27,70 +27,56 @@
 
   <!-- 🏖️ Hero Section -->
   <section class="hero">
-  <img src="images/branding/banner.jpg" alt="LV Beach Camp Banner">
-  <div class="content">
-    <h1>Welcome to LV Beach Camp</h1>
-    <p class="tag">Your perfect tropical getaway in Hinunangan, Southern Leyte 🌴</p>
-    <div class="actions">
-      <a href="booking.html" class="btn-primary">Plan Your Stay</a>
+    <div class="bg"></div>
+    <div class="content">
+      <h1>Welcome to LV Beach Camp</h1>
+      <p class="tag">Your perfect tropical getaway in Hinunangan, Southern Leyte 🌴</p>
+      <div class="actions">
+        <a href="booking.html" class="btn-primary">Plan Your Stay</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- 🌅 About Preview -->
-  <section class="about-preview">
+  <!-- 🌅 Intro Section -->
+  <section class="intro">
     <div class="container">
-      <h2>Discover the Beauty of LV Beach Camp</h2>
+      <h2>Relax, Explore & Experience Island Life</h2>
       <p>
-        Nestled along the shores of Purok Santol, Brgy. Ingan, LV Beach Camp offers cozy nipa huts, teepee houses, and camping tents for travelers who seek peace and adventure.
-        Wake up to the sound of waves, enjoy island tours to San Pablo and San Pedro, and end your day under a stunning sunset sky.
+        Nestled in the serene coast of Southern Leyte, LV Beach Camp offers a peaceful retreat 
+        surrounded by coconut trees, native cottages, and the sound of gentle waves. 
+        Whether you’re here to unwind, camp under the stars, or explore nearby islands — 
+        we’ve got you covered.
       </p>
-      <a href="about.html" class="btn-secondary">Learn More</a>
     </div>
   </section>
 
-  <!-- 🏕️ Accommodation Highlights -->
-  <section class="accommodation-preview">
-    <h2>Our Accommodation</h2>
-    <div class="room-preview-grid">
-      <div class="room-preview">
-        <img src="images/rooms/bahaykubo.jpg" alt="Bahay Kubo">
-        <h3>Bahay Kubo Beach Front</h3>
-      </div>
-      <div class="room-preview">
-        <img src="images/rooms/teepee.jpg" alt="Teepee House">
-        <h3>Teepee House</h3>
-      </div>
-      <div class="room-preview">
-        <img src="images/rooms/rooma.jpg" alt="Native Room">
-        <h3>Native House A & B</h3>
-      </div>
-    </div>
-    <a href="accommodation.html" class="btn-primary">View All Rooms</a>
+  <!-- 🏕️ Banner Showcase -->
+  <section class="fade-banner">
+    <img src="images/branding/banner.jpg" alt="LV Beach Camp Banner" />
   </section>
 
-  <!-- 🪸 Island Tours -->
-  <section class="island-preview">
-    <h2>Island Tour Packages</h2>
-    <div class="island-grid">
-      <div class="island-card">
-        <img src="images/islands/san-pedro-island.jpg" alt="San Pedro Island">
-        <h3>San Pedro Island</h3>
-      </div>
-      <div class="island-card">
-        <img src="images/islands/san-pablo-island.jpg" alt="San Pablo Island">
-        <h3>San Pablo Island</h3>
-      </div>
-    </div>
-    <a href="booking.html" class="btn-secondary">Book a Tour</a>
-  </section>
-
-  <!-- 🌅 Footer -->
+  <!-- 🌊 Footer -->
   <footer>
-    <p>© 2025 LV Beach Camp | Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</p>
-    <p><a href="https://facebook.com/lvbeachcamp" target="_blank">Visit our Facebook Page</a></p>
+    <p>© 2025 LV Beach Camp. All Rights Reserved.</p>
+    <p class="fade-credit">
+      Website created by 
+      <a href="https://www.facebook.com/svpfunnels/" target="_blank">SVP Funnels</a>
+      in collaboration with 
+      <a href="https://www.facebook.com/profile.php?id=61571330212081" target="_blank">Tiny Team Digital Studio</a> 🌴
+    </p>
   </footer>
 
+  <!-- ✨ Fade Animation Script -->
+  <script>
+    const fadeEls = document.querySelectorAll(".fade-banner, .fade-credit");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+    fadeEls.forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
