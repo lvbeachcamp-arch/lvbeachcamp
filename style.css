@@ -700,3 +700,67 @@ footer a {
 .qr-card h3 {
   color: #a0522d;
 }
+
+/* 📍 Contact Page */
+.contact-hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.contact-hero .hero-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.contact-hero .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.45);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+/* 📨 Contact Info */
+.contact-info {
+  background: #fffaf0;
+  text-align: center;
+  padding: 60px 20px;
+}
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.contact-info a {
+  color: #d2691e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* 🗺️ Map Section */
+.map-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+.map-container {
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ✉️ Messenger Button */
+.btn-primary {
+  background: #d2691e;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background: #b55213;
+}
