@@ -3,80 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LV Beach Camp | Southern Leyte</title>
+  <title>LV Beach Camp | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- 🌴 Navigation -->
-  <header class="header">
-    <div class="nav-container">
-      <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo" class="logo" />
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="accommodation.html">Accommodation</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="booking.html">Booking</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- 🌅 Banner -->
+  <header class="top-banner">
+    <img src="images/banner.jpg" alt="LV Beach Camp Banner" />
   </header>
 
-  <!-- 🏖️ Hero Section -->
+  <!-- 🧭 Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="accommodation.html">Accommodation</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- 🏖️ Hero -->
   <section class="hero">
-    <div class="bg"></div>
     <div class="content">
       <h1>Welcome to LV Beach Camp</h1>
-      <p class="tag">Your perfect tropical getaway in Hinunangan, Southern Leyte 🌴</p>
-      <div class="actions">
-        <a href="booking.html" class="btn-primary">Plan Your Stay</a>
+      <p>Your perfect tropical getaway in Hinunangan, Southern Leyte 🌴</p>
+      <a href="booking.html" class="btn">Plan Your Stay</a>
+    </div>
+  </section>
+
+  <!-- 🏕️ Room Section -->
+  <section class="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room-grid">
+      <img src="images/rooms/rooma.jpg" alt="Room A">
+      <img src="images/rooms/bahaykubo.jpg" alt="Bahay Kubo">
+      <img src="images/rooms/mediumcampingtent.jpg" alt="Medium Camping Tent">
+      <img src="images/rooms/teepee.jpg" alt="Teepee Tent">
+    </div>
+  </section>
+
+  <!-- 🍽️ Menu & Rates Section (2 Rows) -->
+  <section class="menu-rates">
+    <h2>Menu & Room Rates</h2>
+    <div class="menu-rates-grid">
+      <div class="menu-item">
+        <img src="images/menu/basicfoodmenu.jpg" alt="Food Menu">
+      </div>
+      <div class="menu-item">
+        <img src="images/rooms/newroomrates.jpg" alt="Room Rates">
       </div>
     </div>
-  </section>
-
-  <!-- 🌅 Intro Section -->
-  <section class="intro">
-    <div class="container">
-      <h2>Relax, Explore & Experience Island Life</h2>
-      <p>
-        Nestled in the serene coast of Southern Leyte, LV Beach Camp offers a peaceful retreat 
-        surrounded by coconut trees, native cottages, and the sound of gentle waves. 
-        Whether you’re here to unwind, camp under the stars, or explore nearby islands — 
-        we’ve got you covered.
-      </p>
-    </div>
-  </section>
-
-  <!-- 🏕️ Banner Showcase -->
-  <section class="fade-banner">
-    <img src="images/branding/banner.jpg" alt="LV Beach Camp Banner" />
   </section>
 
   <!-- 🌊 Footer -->
   <footer>
     <p>© 2025 LV Beach Camp. All Rights Reserved.</p>
-    <p class="fade-credit">
-      Website created by 
-      <a href="https://www.facebook.com/svpfunnels/" target="_blank">SVP Funnels</a>
+    <p>Website created by 
+      <a href="https://www.facebook.com/svpfunnels/" target="_blank">SVP Funnels</a> 
       in collaboration with 
       <a href="https://www.facebook.com/profile.php?id=61571330212081" target="_blank">Tiny Team Digital Studio</a> 🌴
     </p>
   </footer>
-
-  <!-- ✨ Fade Animation Script -->
-  <script>
-    const fadeEls = document.querySelectorAll(".fade-banner, .fade-credit");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.2 });
-    fadeEls.forEach((el) => observer.observe(el));
-  </script>
 </body>
 </html>
