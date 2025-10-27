@@ -1,122 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking | LV Beach Camp</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LV Beach Camp | Booking</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <header class="site-header">
-    <img src="images/branding/banner.jpg" alt="LV Beach Camp Banner" class="banner">
+<body>
+  <!-- 🌅 Banner -->
+  <header class="top-banner">
+    <img src="images/banner.jpg" alt="LV Beach Camp Banner" />
   </header>
 
-  <main>
-    <!-- 🏠 Room Packages -->
-    <section class="accommodation">
-      <h2>Accommodation Options</h2>
-      <div class="room-grid">
-        <div class="room-card">
-          <img src="images/rooms/bahaykubo.jpg" alt="Bahay Kubo Beach Front">
-          <h3>Bahay Kubo – Beach Front</h3>
-          <p>₱1,450 (Fri–Sun & Holidays) | ₱1,200 (Mon–Thu)</p>
-        </div>
+  <!-- 🧭 Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="accommodation.html">Accommodation</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html" class="active">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-        <div class="room-card">
-          <img src="images/rooms/rooma.jpg" alt="Native House A & B">
-          <h3>Native House A & B</h3>
-          <p>₱950 (Fri–Sun & Holidays) | ₱850 (Mon–Thu)</p>
-        </div>
-
-        <div class="room-card">
-          <img src="images/rooms/teepee.jpg" alt="Teepee House">
-          <h3>Teepee House</h3>
-          <p>₱1,200 (Fri–Sun & Holidays) | ₱1,000 (Mon–Thu)</p>
-        </div>
-
-        <div class="room-card">
-          <img src="images/rooms/mediumcampingtent.jpg" alt="Camping Tent">
-          <h3>Camping Tent</h3>
-          <p>₱500 for 3–4 guests</p>
-        </div>
-      </div>
-
-      <img src="images/rooms/newroomrates.jpg" alt="LV Beach Camp Room Rates" class="room-rates">
-    </section>
-
-    <!-- 🍴 Food Menu -->
-    <section class="food-menu">
-      <h2>Basic Food Menu</h2>
-      <img src="images/menu/basicfoodmenu.jpg" alt="Food Menu" class="menu-image">
-    </section>
-
-    <!-- 💳 Payment Options -->
-   <section class="payment-options">
-  <h2>Payment Options</h2>
-  <p>Secure your booking through any of these payment channels:</p>
-
-  <div class="payment-grid">
-    <div class="payment-card">
-      <img src="images/qr/qr-gcash.png" alt="GCash QR" />
-      <h3>GCash</h3>
+  <!-- 🏕️ Booking Hero -->
+  <section class="hero small">
+    <div class="content">
+      <h1>Book Your Stay</h1>
+      <p>Reserve your perfect island getaway at LV Beach Camp 🌴</p>
     </div>
+  </section>
 
-    <div class="payment-card">
-      <img src="images/qr/qr-paymaya.png" alt="PayMaya QR" />
-      <h3>PayMaya</h3>
+  <!-- 🍽️ Menu & Room Rates -->
+  <section class="menu-rates booking-layout">
+    <div class="menu-item">
+      <img src="images/menu/basicfoodmenu.jpg" alt="Food Menu" />
     </div>
-
-    <div class="payment-card">
-      <img src="images/qr/qr-bdo.png" alt="BDO QR" />
-      <h3>BDO</h3>
+    <div class="menu-item">
+      <img src="images/rooms/newroomrates.jpg" alt="Room Rates" />
     </div>
+  </section>
 
-    <div class="payment-card">
-      <img src="images/qr/qr-pnb.png" alt="PNB QR" />
-      <h3>PNB</h3>
+  <!-- 💳 Payment QR Section -->
+  <section class="payment">
+    <h2>Payment Options</h2>
+    <div class="qr-grid">
+      <img src="images/payments/qr-gcash.png" alt="GCash QR" />
+      <img src="images/payments/qr-paymaya.png" alt="PayMaya QR" />
+      <img src="images/payments/qr-bdo.png" alt="BDO QR" />
+      <img src="images/payments/qr-pnb.png" alt="PNB QR" />
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- 📝 Booking Form -->
+  <section class="form-section">
+    <h2>Submit Your Booking</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvJvZkC7j7EQLPkoL_BookFormURL/viewform?embedded=true" 
+      width="100%" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
 
-    <!-- 📅 Booking Form -->
-    <section class="booking-form">
-      <h2>Book Your Stay</h2>
-      <form id="bookingForm" onsubmit="redirectToFacebook(); return false;">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date" required>
-
-        <label for="room">Select Room Type:</label>
-        <select id="room" name="room" required>
-          <option value="">Choose...</option>
-          <option>Bahay Kubo</option>
-          <option>Native House A & B</option>
-          <option>Teepee House</option>
-          <option>Camping Tent</option>
-        </select>
-
-        <label for="guests">Number of Guests:</label>
-        <input type="number" id="guests" name="guests" min="1" required>
-
-        <button type="submit" class="book-btn">Confirm Booking</button>
-      </form>
-    </section>
-  </main>
-
+  <!-- 🌊 Footer -->
   <footer>
-    <p>© 2025 LV Beach Camp | Brgy. Ingan, Hinunangan, Southern Leyte</p>
+    <p>© 2025 LV Beach Camp. All Rights Reserved.</p>
+    <p>Website created by 
+      <a href="https://www.facebook.com/svpfunnels/" target="_blank">SVP Funnels</a> 
+      in collaboration with 
+      <a href="https://www.facebook.com/profile.php?id=61571330212081" target="_blank">Tiny Team Digital Studio</a> 🌴
+    </p>
   </footer>
-
-  <script>
-    function redirectToFacebook() {
-      alert("Thank you! You’ll now be redirected to our Facebook page for confirmation.");
-      window.location.href = "https://facebook.com/lvbeachcamp";
-    }
-  </script>
-
 </body>
 </html>
