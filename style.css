@@ -239,3 +239,8 @@ footer a:hover{text-decoration:underline}
   #payments .grid { grid-template-columns: 1fr; }
 }
 
+/* === FINAL COLOR TWEAK === */
+.title, 
+.subtitle {
+  color: #4E342E; /* deep brown for better contrast */
+}
