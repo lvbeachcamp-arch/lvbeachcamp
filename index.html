@@ -141,16 +141,35 @@
   <a href="https://m.me/lvbeachcamp" target="_blank" class="messenger-bar">💬 Message Us Now</a>
 
   <!-- 🪸 LIGHTBOX -->
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
-    <div class="lightbox-content">
-      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-      <img id="lightbox-img" src="" alt="Full view">
-      <div class="lightbox-actions">
-        <a href="https://m.me/lvbeachcamp" target="_blank" class="btn primary">Book Us Now</a>
-      </div>
+  <!-- LIGHTBOX (click image to enlarge) -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img id="lightbox-img" src="" alt="Expanded view">
+    <div class="lightbox-actions">
+      <a href="https://m.me/lvbeachcamp" target="_blank" class="btn primary">Book Now on Messenger</a>
     </div>
   </div>
+</div>
+
+<script>
+  // Open lightbox
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').setAttribute('aria-hidden', 'false');
+  }
+  // Close lightbox
+  function closeLightbox() {
+    document.getElementById('lightbox').setAttribute('aria-hidden', 'true');
+  }
+  // Apply to all clickable images
+  document.querySelectorAll('.card img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => openLightbox(img.src));
+  });
+</script>
+
 
   <!-- ✨ SCRIPT -->
   <script>
