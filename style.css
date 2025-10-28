@@ -1,0 +1,231 @@
+/* ============================
+   LV BEACH CAMP — STYLE SHEET
+   ============================ */
+
+/* 🎨 THEME COLORS */
+:root {
+  --orange: #f9a825;
+  --soft-orange: #ffecb3;
+  --brown: #bf7c40;
+  --deep-brown: #4e342e;
+  --cream: #fff7e6;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  --radius: 16px;
+}
+
+/* 🌐 BASE LAYOUT */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--deep-brown);
+  background: var(--cream);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; border: 0; }
+a { text-decoration: none; color: inherit; }
+
+.container { width: min(1100px, 92%); margin: 0 auto; }
+
+/* ================= NAVBAR ================= */
+.nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 50;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.nav .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.name {
+  font-family: 'Merienda', cursive;
+  font-weight: 700;
+  color: var(--deep-brown);
+}
+.menu { display: flex; gap: 14px; flex-wrap: wrap; }
+.menu a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.menu a:hover { background: #fff3df; }
+.cta {
+  background: var(--orange);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 8px 18px;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+.cta:hover { background: #d78f10; }
+
+/* ================= HERO ================= */
+.hero {
+  text-align: center;
+  padding: 90px 20px 70px;
+  background: linear-gradient(135deg, #c97b32 0%, #5a3d1e 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -20%;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at 30% 40%, rgba(255, 204, 102, 0.4), transparent 70%);
+  animation: flare 18s ease-in-out infinite alternate;
+  z-index: 0;
+}
+@keyframes flare {
+  0% { transform: translate(0, 0); opacity: 0.8; }
+  100% { transform: translate(10%, 6%); opacity: 0.5; }
+}
+.hero .container { position: relative; z-index: 1; }
+.hero h1 {
+  font-family: 'Merienda', cursive;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #fff;
+}
+.hero p {
+  color: #ffe8b3;
+  font-size: 1.1rem;
+  margin: 12px 0 30px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.3s;
+  margin: 6px;
+}
+.btn.primary { background: var(--orange); color: var(--deep-brown); }
+.btn.primary:hover { background: #d78f10; color: #fff; }
+.btn.ghost { border: 2px solid var(--orange); color: #fff; }
+.btn.ghost:hover { background: var(--orange); color: var(--deep-brown); }
+.island-hero {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+.island-hero img {
+  width: 46%;
+  border-radius: 12px;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+/* ================= SECTIONS ================= */
+.section { padding: 70px 0; text-align: center; }
+.section.white { background: #fff; }
+.section.orange { background: #ffe7c2; }
+.title {
+  font-family: 'Merienda', cursive;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  color: var(--deep-brown);
+}
+.subtitle {
+  margin: 6px 0 24px;
+  color: #5a3d1e;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* ================= CARDS ================= */
+.grid { display: grid; gap: 20px; }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+}
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+.card .body { padding: 16px; }
+.card h3 {
+  font-family: 'Merienda', cursive;
+  margin-bottom: 6px;
+  color: var(--brown);
+}
+.meta { opacity: 0.85; }
+
+/* Split images for island section */
+.split-img { display: grid; grid-template-columns: 1fr 1fr; }
+
+/* ================= CONTACT ================= */
+.contact-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: start; }
+.map iframe { border-radius: var(--radius); box-shadow: var(--shadow); }
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--deep-brown);
+  color: #f8efe2;
+  text-align: center;
+  padding: 28px 15px 100px; /* bottom space for messenger bar */
+}
+footer small { display: block; margin-bottom: 8px; }
+.footer-logo {
+  height: 22px;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+/* ================= MESSENGER BAR ================= */
+.messenger-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--orange);
+  color: var(--deep-brown);
+  text-align: center;
+  font-weight: 700;
+  padding: 14px 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  transition: 0.3s;
+}
+.messenger-bar:hover {
+  background: #e89a10;
+  color: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 720px) {
+  .menu { display: none; } /* simple mobile header */
+  .nav .inner { justify-content: center; }
+  .hero { padding: 70px 20px; }
+  .hero h1 { font-size: 1.8rem; }
+  footer { font-size: 0.9rem; }
+}
