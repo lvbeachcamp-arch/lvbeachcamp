@@ -265,4 +265,8 @@ footer .foot {
   margin: 0 6px;
   vertical-align: middle;
 }
+footer a:hover {
+  color: var(--orange);
+  transition: color 0.3s ease;
+}
 
