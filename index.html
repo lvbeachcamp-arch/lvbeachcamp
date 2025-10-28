@@ -111,20 +111,44 @@
     </div>
   </section>
 
-  <!-- 💸 PAYMENT OPTIONS -->
-  <section class="section white fade-in">
-    <div class="container">
-      <h2 class="title">Payment Options</h2>
-      <p class="subtitle">We accept multiple payment channels for your convenience</p>
+ <!-- ================= PAYMENT OPTIONS ================= -->
+<section class="section white" id="payments">
+  <div class="container">
+    <h2 class="title">Payment Options</h2>
+    <p class="subtitle">We accept multiple convenient payment methods</p>
 
-      <div class="grid grid-4">
-        <div class="card"><img src="images/qr/qr-gcash.png" alt="GCash QR" onclick="openLightbox(this.src)"></div>
-        <div class="card"><img src="images/qr/qr-paymaya.png" alt="PayMaya QR" onclick="openLightbox(this.src)"></div>
-        <div class="card"><img src="images/qr/qr-pnb.png" alt="PNB QR" onclick="openLightbox(this.src)"></div>
-        <div class="card"><img src="images/qr/qr-bdo.png" alt="BDO QR" onclick="openLightbox(this.src)"></div>
-      </div>
+    <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 22px;">
+      <article class="card">
+        <div class="image">
+          <img src="images/qr/qr-gcash.png" alt="GCash QR" onclick="openLightbox(this.src)">
+        </div>
+        <div class="body"><h3>GCash</h3></div>
+      </article>
+
+      <article class="card">
+        <div class="image">
+          <img src="images/qr/qr-paymaya.png" alt="PayMaya QR" onclick="openLightbox(this.src)">
+        </div>
+        <div class="body"><h3>PayMaya</h3></div>
+      </article>
+
+      <article class="card">
+        <div class="image">
+          <img src="images/qr/qr-bdo.png" alt="BDO QR" onclick="openLightbox(this.src)">
+        </div>
+        <div class="body"><h3>BDO</h3></div>
+      </article>
+
+      <article class="card">
+        <div class="image">
+          <img src="images/qr/qr-pnb.png" alt="PNB QR" onclick="openLightbox(this.src)">
+        </div>
+        <div class="body"><h3>PNB</h3></div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- 📍 CONTACT -->
   <section id="contact" class="section orange fade-in">
