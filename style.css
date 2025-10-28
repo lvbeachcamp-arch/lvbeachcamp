@@ -96,39 +96,33 @@ a { text-decoration: none; color: inherit; }
 .cta:hover { background: #d78f10; }
 
 /* 🏖️ HERO SECTION */
-.hero {
-  position: relative;
-  min-height: 72vh;
-  display: grid;
-  place-items: center;
+.hero.clean {
   text-align: center;
-  color: #2e1f17;
-  overflow: hidden;
+  padding: 80px 20px 60px;
+  background: linear-gradient(135deg, #00353b 0%, #001f24 100%);
+  color: #fff;
 }
-.hero .bg {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(255,247,230,0.25)),
-              url('images/banner.jpg') center/cover no-repeat;
-  filter: saturate(110%) contrast(102%);
-}
-.hero .content { position: relative; padding: 40px 18px; }
-.hero h1 {
+
+.hero.clean h1 {
   font-family: 'Merienda', cursive;
-  font-size: clamp(32px, 6vw, 52px);
-  margin-bottom: 8px;
+  font-size: 2rem;
+  color: #ffffff;
 }
-.hero .tag {
-  font-family: 'Lucida Calligraphy', cursive;
-  font-size: clamp(16px, 3.2vw, 22px);
-  opacity: 0.95;
+
+.hero.clean p {
+  font-size: 1.1rem;
+  color: #d8f4f5;
+  margin: 10px 0 25px;
 }
-.hero .actions {
-  margin-top: 18px;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
+
+.btn.primary { background: #00bcd4; color: #fff; }
+.btn.primary:hover { background: #0097a7; }
+.btn.ghost { border: 1px solid #00bcd4; color: #00bcd4; }
+.btn.ghost:hover { background: #00bcd4; color: #fff; }
+
+.island-hero img {
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
 }
 
 /* 🏕️ CARDS */
