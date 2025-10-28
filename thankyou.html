@@ -1,34 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You | LV Beach Camp</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | LV Beach Camp</title>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-  <script>
-    // Auto-redirect after delay
-    setTimeout(function() {
-      window.location.href = "https://m.me/lvbeachcamp";
-    }, 4000); // 4 seconds
-  </script>
+<style>
+  /* 🌅 Custom tweaks for Thank You page */
+  .redirect {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #c97b32 0%, #5a3d1e 100%),
+                url('images/islands/blue-lagoon.jpg') center/cover no-repeat;
+    background-blend-mode: multiply;
+  }
+  .panel {
+    background: rgba(255,247,230,0.9);
+    backdrop-filter: blur(6px);
+    padding: 40px 32px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    max-width: 480px;
+  }
+  .thankyou-logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  .panel h2 {
+    font-family: 'Merienda', cursive;
+    color: #4E342E;
+    margin-bottom: 10px;
+  }
+  .panel p {
+    color: #4E342E;
+    margin-bottom: 12px;
+  }
+  .btn.primary {
+    background: #F9A825;
+    color: #4E342E;
+  }
+  .btn.primary:hover {
+    background: #d78f10;
+  }
+</style>
+
+<script>
+  // Auto-redirect after 4 seconds
+  setTimeout(() => {
+    window.location.href = "https://m.me/lvbeachcamp";
+  }, 4000);
+</script>
 </head>
+
 <body>
 
-  <!-- 🌴 Hero Section -->
-  <section class="redirect">
-    <div class="panel">
-      <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo" class="thankyou-logo">
-      <h2>Thank You for Booking!</h2>
-      <p>We’ve received your request and are preparing to confirm your stay.</p>
-      <p>You’ll be redirected to our <strong>Facebook Messenger</strong> shortly for confirmation 🌺</p>
-      <a href="https://m.me/lvbeachcamp" class="btn-primary">Go Now</a>
-    </div>
-  </section>
+<!-- ================= HEADER ================= -->
+<header class="nav">
+  <div class="container inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpg" alt="LV Beach Camp logo" class="small-logo">
+      <span class="name">LV Beach Camp</span>
+    </a>
+  </div>
+</header>
 
-  <footer>
-    <p>© 2025 LV Beach Camp | Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</p>
-  </footer>
+<!-- ================= THANK YOU PANEL ================= -->
+<section class="redirect">
+  <div class="panel">
+    <img src="images/logo.jpg" alt="LV Beach Camp Logo" class="thankyou-logo">
+    <h2>Thank You for Booking! 🌴</h2>
+    <p>We’ve received your request and are preparing to confirm your stay.</p>
+    <p>You’ll be redirected to our <strong>Facebook Messenger</strong> shortly for confirmation.</p>
+    <a href="https://m.me/lvbeachcamp" class="btn primary">Go Now</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container foot">
+    <small>© 2025 LV Beach Camp — Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte 6608</small>
+    <p class="powered">
+      Powered by 
+      <img src="images/svp-logo.png" alt="SVP Funnels" class="footer-logo">
+      &
+      <img src="images/tides-logo.png" alt="Tides of Hope" class="footer-logo">
+    </p>
+    <div class="actions">
+      <a class="btn ghost" href="https://m.me/lvbeachcamp" target="_blank">Message Us</a>
+      <a class="btn primary" href="booking.html">Reserve Your Spot</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
