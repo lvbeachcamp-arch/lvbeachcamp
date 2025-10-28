@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | LV Beach Camp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Thank You Page Overrides */
+    body {
+      background: linear-gradient(135deg, #f9a825 0%, #ffd86a 100%);
+      color: #fff;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .thankyou-card {
+      background: #fff;
+      color: var(--deepbrown);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 40px 30px;
+      max-width: 480px;
+      margin: 0 20px;
+      animation: fadeIn 1s ease-out;
+    }
+    .thankyou-card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .thankyou-card h1 {
+      font-family: 'Merienda', cursive;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+    .thankyou-card p {
+      margin-bottom: 20px;
+      color: var(--deepbrown);
+    }
+    .btn-primary {
+      background: var(--orange);
+      color: var(--deepbrown);
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-primary:hover {
+      background: var(--deepbrown);
+      color: #fff;
+    }
+    footer {
+      background: var(--deepbrown);
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      font-size: 0.9rem;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+    footer a {
+      color: #ffe8b3;
+      text-decoration: none;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <script>
+    // Auto-redirect to Messenger after 4 seconds
+    setTimeout(() => {
+      window.location.href = "https://m.me/lvbeachcamp";
+    }, 4000);
+  </script>
+</head>
+<body>
+
+  <div class="thankyou-card fade-in">
+    <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo">
+    <h1>Thank You!</h1>
+    <p>We’ve received your booking inquiry and will confirm it shortly on Messenger 🌴</p>
+    <a href="https://m.me/lvbeachcamp" target="_blank" class="btn-primary">Go to Messenger</a>
+    <p style="margin-top:10px;font-size:0.9rem;opacity:.8;">Redirecting automatically...</p>
+  </div>
+
+  <footer>
+    <p>© 2025 LV Beach Camp — Hinunangan, Southern Leyte</p>
+    <p>Powered by 
+      <a href="https://www.facebook.com/svpfunnels" target="_blank">SVP Funnels</a> &
+      <a href="https://tinyteamstudio.online/" target="_blank">Tiny Team Digital Studio</a>
+    </p>
+  </footer>
+
+</body>
+</html>
