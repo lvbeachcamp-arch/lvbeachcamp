@@ -99,7 +99,7 @@ a { text-decoration: none; color: inherit; }
 .hero.clean {
   text-align: center;
   padding: 80px 20px 60px;
-  background: linear-gradient(135deg, #00353b 0%, #001f24 100%);
+  background: linear-gradient(135deg, #c97b32 0%, #5a3d1e 100%);
   color: #fff;
 }
 
@@ -111,14 +111,14 @@ a { text-decoration: none; color: inherit; }
 
 .hero.clean p {
   font-size: 1.1rem;
-  color: #d8f4f5;
+  color: #ffebcd; /* soft cream for contrast */
   margin: 10px 0 25px;
 }
 
-.btn.primary { background: #00bcd4; color: #fff; }
-.btn.primary:hover { background: #0097a7; }
-.btn.ghost { border: 1px solid #00bcd4; color: #00bcd4; }
-.btn.ghost:hover { background: #00bcd4; color: #fff; }
+.btn.primary { background: #ffb347; color: #fff; }
+.btn.primary:hover { background: #e08b27; }
+.btn.ghost { border: 1px solid #ffb347; color: #ffb347; }
+.btn.ghost:hover { background: #ffb347; color: #fff; }
 
 .island-hero img {
   border: 3px solid rgba(255,255,255,0.3);
