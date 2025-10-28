@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | LV Beach Camp</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery | LV Beach Camp</title>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- 🌴 Header -->
-  <header class="header">
-    <div class="nav-container">
-      <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo" class="logo">
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="accommodation.html">Accommodation</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="booking.html">Booking</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
+<header class="nav">
+  <div class="container inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpg" alt="LV Beach Camp logo">
+      <span class="name">LV Beach Camp</span>
+    </a>
+    <nav class="menu">
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Rooms</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="booking.html">Reserve Your Spot</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">Gallery</h2>
+    <p class="subtitle">Rooms • Islands • Menu • Payments</p>
+
+    <div class="grid grid-3" style="margin-top:10px">
+      <article class="card">
+        <div class="image"><img src="images/rooms/rooma.jpg" alt="Room A/B"></div>
+        <div class="body">
+          <h3>Rooms</h3>
+          <a class="btn primary" href="booking.html">Reserve Your Spot</a>
+        </div>
+      </article>
+
+      <article class="card" id="islands">
+        <div class="image"><img src="images/islands/blue-lagoon.jpg" alt="Blue Lagoon"></div>
+        <div class="body">
+          <h3>Islands</h3>
+          <a class="btn primary" href="booking.html">Book Your Adventure</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="image"><img src="images/menu/basicfoodmenu.jpg" alt="Menu"></div>
+        <div class="body">
+          <h3>Menu</h3>
+          <a class="btn ghost" href="contact.html">Message for Orders</a>
+        </div>
+      </article>
     </div>
-  </header>
 
-  <!-- 🏖️ Hero -->
-  <section class="contact-hero">
-       <div class="overlay">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you 🌊</p>
+    <h3 style="margin-top:26px">Payment Options</h3>
+    <div class="grid grid-3" style="margin-top:10px">
+      <article class="card">
+        <div class="image"><img src="images/qr/qr-gcash.png" alt="GCash QR"></div>
+        <div class="body"><p>GCash</p></div>
+      </article>
+
+      <article class="card">
+        <div class="image"><img src="images/qr/qr-paymaya.png" alt="PayMaya QR"></div>
+        <div class="body"><p>PayMaya</p></div>
+      </article>
+
+      <article class="card">
+        <div class="image"><img src="images/qr/qr-pnb.png" alt="PNB QR"></div>
+        <div class="body"><p>PNB</p></div>
+      </article>
     </div>
-  </section>
 
-  <!-- 📍 Contact Details -->
-  <section class="contact-info">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p><strong>📍 Address:</strong> Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte 6608</p>
-      <p><strong>📞 Contact Number:</strong> 0946 291 1866</p>
-      <p><strong>📧 Email:</strong> <a href="mailto:lvbeachcamp@gmail.com">lvbeachcamp@gmail.com</a></p>
-      <p><strong>🌐 Facebook:</strong> <a href="https://facebook.com/lvbeachcamp" target="_blank">facebook.com/lvbeachcamp</a></p>
-
-      <a href="https://m.me/lvbeachcamp" target="_blank" class="btn-primary">Message Us on Messenger</a>
+    <div class="actions" style="margin-top:18px">
+      <a class="btn primary" href="booking.html">Reserve Your Spot</a>
     </div>
-  </section>
-
-  <!-- 🗺️ Google Map -->
-  <section class="map-section">
-    <h2>Find Us on Google Maps</h2>
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.016748938104!2d125.18193831522923!3d10.445615292550226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3307032cfcdda073%3A0xca286d1f18f70b3c!2sLV%20Beach%20Camp!5e0!3m2!1sen!2sph!4v1729941923412!5m2!1sen!2sph" 
-        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
-    </div>
-  </section>
-
-  <!-- 🌊 CTA -->
-  <section class="cta-section">
-    <h2>Plan Your Stay with LV Beach Camp</h2>
-    <p>Relax • Explore • Experience island life 🌴</p>
-    <a href="booking.html" class="btn-primary">Book Now</a>
-  </section>
-
-  <!-- 🌅 Footer -->
-  <footer>
-    <p>© 2025 LV Beach Camp | Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</p>
-    <p><a href="https://facebook.com/lvbeachcamp" target="_blank">Follow us on Facebook</a></p>
-  </footer>
+  </div>
+</section>
 
 </body>
 </html>
