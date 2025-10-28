@@ -1,66 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LV Beach Camp | Booking</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Booking | LV Beach Camp</title>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- 
-  <!-- 🧭 Navigation -->
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="accommodation.html">Accommodation</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="booking.html" class="active">Booking</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
-  <!-- 📅 Booking Section -->
-  <section class="booking">
-    <h1>Book Your Stay</h1>
+<header class="nav">
+  <div class="container inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpg" alt="LV Beach Camp logo">
+      <span class="name">LV Beach Camp</span>
+    </a>
+    <nav class="menu">
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- 🍽️ Menu & Room Rates Side by Side -->
-    <div class="menu-rates-grid">
-      <div class="menu-item">
-        <img src="images/menu/basicfoodmenu.jpg" alt="Food Menu">
-      </div>
-      <div class="menu-item">
-        <img src="images/rooms/newroomrates.jpg" alt="Room Rates">
-      </div>
-    </div>
+<section class="redirect">
+  <div class="panel">
+    <h2>Thank you for choosing LV Beach Camp! 🌴</h2>
+    <p>We’ll help you confirm your booking instantly on Facebook Messenger.</p>
 
-    <!-- 💳 Payment QR Codes -->
-    <h2>Payment Options</h2>
-    <div class="qr-grid">
-      <img src="images/qr/qr-gcash.png" alt="GCash QR">
-      <img src="images/qr/qr-paymaya.png" alt="PayMaya QR">
-      <img src="images/qr/qr-bdo.png" alt="BDO QR">
-      <img src="images/qr/qr-pnb.png" alt="PNB QR">
-    </div>
+    <a class="btn primary pulse" href="https://m.me/lvbeachcamp" target="_blank" rel="noopener">
+      Open Messenger Now
+    </a>
 
-   <!-- 🧾 Booking Form -->
-<div class="booking-form">
-  <iframe 
-    src="https://docs.google.com/forms/d/1kH6OcMNoyCqIgxPLHnmqxCzvNNbZsoLQRB5SQRuZBeo/viewform?embedded=true" 
-    width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">
-    Loading…
-  </iframe>
-</div>
+    <p style="margin-top:10px;opacity:.8">Redirecting you automatically…</p>
+  </div>
+</section>
 
-  </section>
+<script>
+  // Automatically redirect to Messenger after 3 seconds
+  setTimeout(function(){
+    window.location.href = "https://m.me/lvbeachcamp";
+  }, 3000);
+</script>
 
-  <!-- 🌊 Footer -->
-  <footer>
-    <p>© 2025 LV Beach Camp. All Rights Reserved.</p>
-    <p>Website created by 
-      <a href="https://www.facebook.com/svpfunnels/" target="_blank">SVP Funnels</a> 
-      in collaboration with 
-      <a href="https://www.facebook.com/profile.php?id=61571330212081" target="_blank">Tiny Team Digital Studio</a> 🌴
-    </p>
-  </footer>
 </body>
 </html>
