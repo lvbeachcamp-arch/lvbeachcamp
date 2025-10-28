@@ -57,18 +57,27 @@ a{text-decoration:none;color:inherit}
 .grid{display:grid;gap:22px}
 .grid-2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
 .grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.grid-4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-.card{
-  background:#fff;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:var(--shadow);
-  transition:transform .25s,box-shadow .25s;
+/* Ensure Stay Your Way section matches QR section balance */
+#rooms .card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
-.card:hover{transform:translateY(-4px);box-shadow:0 16px 38px rgba(0,0,0,.18)}
-.card img{width:100%;height:220px;object-fit:cover}
-.card .body{padding:14px}
-.card h3{font-family:'Merienda',cursive;color:var(--deepbrown)}
+
+#rooms .card img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#rooms .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
 
 /* CONTACT */
 /* CONTACT GRID CENTER FIX */
