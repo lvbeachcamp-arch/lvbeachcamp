@@ -6,14 +6,21 @@
 <title>Gallery | LV Beach Camp</title>
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+  /* 🌅 Subtle Background for Gallery Section */
+  .gallery-section {
+    background: linear-gradient(180deg, #fff7e6 0%, #ffffff 100%);
+  }
+</style>
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <header class="nav">
   <div class="container inner">
     <a href="index.html" class="brand">
-      <img src="images/logo.jpg" alt="LV Beach Camp logo">
+      <img src="images/logo.jpg" alt="LV Beach Camp logo" class="small-logo">
       <span class="name">LV Beach Camp</span>
     </a>
     <nav class="menu">
@@ -25,7 +32,8 @@
   </div>
 </header>
 
-<section class="section">
+<!-- ================= GALLERY SECTION ================= -->
+<section class="section gallery-section">
   <div class="container">
     <h2 class="title">Gallery</h2>
     <p class="subtitle">Rooms • Islands • Menu • Payments</p>
@@ -79,6 +87,23 @@
     </div>
   </div>
 </section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container foot">
+    <small>© 2025 LV Beach Camp — Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte 6608</small>
+    <p class="powered">
+      Powered by 
+      <img src="images/svp-logo.png" alt="SVP Funnels" class="footer-logo">
+      &
+      <img src="images/tides-logo.png" alt="Tides of Hope" class="footer-logo">
+    </p>
+    <div class="actions">
+      <a class="btn ghost" href="https://m.me/lvbeachcamp" target="_blank">Message Us</a>
+      <a class="btn primary" href="booking.html">Reserve Your Spot</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
