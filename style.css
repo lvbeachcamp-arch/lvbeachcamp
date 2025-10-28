@@ -265,3 +265,89 @@ footer a:hover{text-decoration:underline}
 .hero .subtitle {
   color: #4E342E !important; /* deep brown */
 }
+
+/* =========================
+   MOBILE FIX PACK (add last)
+   ========================= */
+
+/* Prevent sideways scroll on small screens */
+html, body { overflow-x: hidden; }
+
+/* Navbar: allow wrap + comfy taps */
+@media (max-width: 768px) {
+  .nav .inner { flex-wrap: wrap; gap: 10px; }
+  .brand span { font-size: 1rem; }
+  .menu { width: 100%; justify-content: center; gap: 8px; }
+  .menu a { padding: 8px 10px; font-size: .95rem; }
+  .cta { padding: 10px 14px; font-size: .95rem; }
+}
+
+/* Hero: smaller padding & responsive type */
+.hero {
+  padding: 64px 18px 44px;
+}
+.hero h1 {
+  font-size: clamp(26px, 8vw, 40px);
+  line-height: 1.15;
+  color: #4E342E !important; /* deep brown */
+}
+.hero p {
+  font-size: clamp(14px, 3.8vw, 18px);
+  color: #5A3D1E !important;
+}
+.hero .btn { margin-top: 10px; }
+
+/* Card rows collapse cleanly on tablets/phones */
+#rooms .grid,
+#payments .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 1024px) {
+  #rooms .grid,
+  #payments .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  #rooms .grid,
+  #payments .grid { grid-template-columns: 1fr; }
+}
+
+/* Card image heights scale for small screens */
+#rooms .card img,
+#payments .card img { height: 220px; object-fit: cover; }
+
+@media (max-width: 520px) {
+  #rooms .card img,
+  #payments .card img { height: 180px; }
+}
+
+/* QR cards: ensure visible area even when PNGs are transparent */
+#payments .card .image {
+  background: #fff;
+  padding: 14px;
+  height: 230px;
+  display: flex; align-items: center; justify-content: center;
+}
+#payments .card img { max-width: 100%; max-height: 190px; object-fit: contain; }
+
+/* Map height on phones */
+@media (max-width: 520px) {
+  .map iframe { height: 240px !important; }
+}
+
+/* Lightbox on mobile: smaller image height */
+@media (max-width: 520px) {
+  #lightbox-img { height: 60vh; }
+}
+
+/* Sticky Messenger button: smaller & higher on phones */
+.messenger-bar { right: 14px; bottom: 16px; }
+@media (max-width: 520px) {
+  .messenger-bar { padding: 10px 14px; font-size: .95rem; bottom: 14px; }
+}
+
+/* Footer: stack and center on narrow widths */
+footer .foot { display: grid; gap: 6px; justify-items: center; }
