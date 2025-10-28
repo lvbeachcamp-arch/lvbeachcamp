@@ -7,147 +7,7 @@
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-<!-- External CSS -->
 <link rel="stylesheet" href="style.css">
-
-<style>
-  /* === BASIC RESET === */
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: #FAF7F0;
-    color: #333;
-    line-height: 1.6;
-  }
-
-  /* === NAVIGATION === */
-  header.nav {
-    background: #fff;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-  .nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-  }
-  .brand .small-logo {
-    width: 80px;
-    height: auto;
-    border-radius: 50%;
-  }
-  .menu a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  .menu a:hover { color: #0097A7; }
-  .menu .cta {
-    background: #0097A7;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 5px;
-  }
-
-  /* === HERO === */
-  .hero.clean {
-    text-align: center;
-    padding: 60px 20px 40px;
-    background: #F4FBFB;
-  }
-  .hero.clean h1 {
-    font-family: 'Merienda', cursive;
-    font-size: 2rem;
-    color: #005b63;
-  }
-  .hero.clean p {
-    font-size: 1.1rem;
-    margin: 10px 0 25px;
-  }
-  .hero.clean .btn {
-    text-decoration: none;
-    padding: 10px 18px;
-    margin: 0 8px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  .btn.primary { background: #0097A7; color: #fff; }
-  .btn.primary:hover { background: #007a8a; }
-  .btn.ghost { border: 1px solid #0097A7; color: #0097A7; }
-  .btn.ghost:hover { background: #0097A7; color: #fff; }
-
-  /* === ISLAND HERO IMAGES === */
-  .island-hero {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-  .island-hero img {
-    width: 48%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  /* === SECTIONS === */
-  .section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  .title { font-size: 1.8rem; color: #004e53; margin-bottom: 10px; }
-  .subtitle { color: #555; margin-bottom: 30px; }
-  .grid { display: grid; gap: 20px; }
-  .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-  .card {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  }
-  .card img { width: 100%; height: 200px; object-fit: cover; }
-  .card .body { padding: 15px; }
-  .card h3 { color: #0097A7; margin-bottom: 5px; }
-  .meta { font-size: 0.9rem; color: #666; margin-bottom: 10px; }
-
-  /* === FOOTER === */
-  footer {
-    background: #f5f5f5;
-    text-align: center;
-    padding: 25px 15px;
-    margin-top: 50px;
-  }
-  footer small {
-    display: block;
-    color: #555;
-  }
-  .powered {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  .footer-logo {
-    height: 22px;
-    margin: 0 5px;
-    vertical-align: middle;
-  }
-  .foot .actions {
-    margin-top: 10px;
-  }
-</style>
 </head>
 
 <body>
@@ -170,7 +30,7 @@
   </div>
 </header>
 
-<!-- ================= HERO (CLEAN) ================= -->
+<!-- ================= HERO SECTION ================= -->
 <section class="hero clean">
   <div class="container">
     <h1>Welcome to LV Beach Camp</h1>
@@ -186,7 +46,7 @@
   </div>
 </section>
 
-<!-- ================= ROOMS ================= -->
+<!-- ================= ROOMS SECTION ================= -->
 <section class="section">
   <div class="container">
     <h2 class="title">Stay Your Way</h2>
@@ -223,7 +83,7 @@
   </div>
 </section>
 
-<!-- ================= ISLANDS ================= -->
+<!-- ================= ISLANDS SECTION ================= -->
 <section id="islands" class="section island-section">
   <div class="container">
     <h2 class="title">Island Tour Packages</h2>
