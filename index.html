@@ -235,3 +235,36 @@
 
 </body>
 </html>
+<!-- ================= LIGHTBOX FEATURE ================= -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <img id="lightbox-img" src="" alt="Preview">
+    <div class="lightbox-actions">
+      <a href="https://m.me/lvbeachcamp" target="_blank" class="btn primary large">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // === Lightbox Functions ===
+  function openLightbox(src) {
+    const lightbox = document.getElementById("lightbox");
+    const img = document.getElementById("lightbox-img");
+    img.src = src;
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  // Optional: close with ESC key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
+  });
+</script>
