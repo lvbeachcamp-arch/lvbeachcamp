@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | LV Beach Camp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      text-align: center;
+      background: linear-gradient(135deg, #F9A825 0%, #FFD86A 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .thankyou-box {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(6px);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      animation: floatUp 1.5s ease forwards;
+      margin-bottom: 80px; /* space for sticky button */
+    }
+
+    .thankyou-box img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 50%;
+    }
+
+    .thankyou-box h1 {
+      font-family: 'Merienda', cursive;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .thankyou-box p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #fffde7;
+    }
+
+    /* 🧡 Sticky Orange Button with Glow */
+    .sticky-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #F9A825;
+      color: #3B2A1A;
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-weight: 700;
+      box-shadow: 0 0 18px rgba(255, 204, 51, 0.55), 0 6px 18px rgba(0,0,0,0.25);
+      text-decoration: none;
+      z-index: 100;
+      transition: all 0.3s ease;
+      animation: fadeIn 1.5s ease forwards, pulseGlow 2.5s infinite ease-in-out;
+    }
+
+    .sticky-btn:hover {
+      background: #E08B27;
+      color: #fff;
+      box-shadow: 0 0 25px rgba(255, 180, 50, 0.8), 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    /* ✨ Gentle glowing pulse */
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 18px rgba(255, 204, 51, 0.55), 0 6px 18px rgba(0,0,0,0.25); }
+      50% { box-shadow: 0 0 28px rgba(255, 204, 51, 0.8), 0 6px 18px rgba(0,0,0,0.25); }
+      100% { box-shadow: 0 0 18px rgba(255, 204, 51, 0.55), 0 6px 18px rgba(0,0,0,0.25); }
+    }
+
+    /* 🌊 Footer */
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #3B2A1A;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ffecb3;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ✨ Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; transform: scale(0.97); }
+    }
+
+    @keyframes floatUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <script>
+    // Smooth fade-out before redirect
+    setTimeout(() => {
+      document.body.style.animation = 'fadeOut 1s ease forwards';
+      setTimeout(() => {
+        window.location.href = "https://m.me/lvbeachcamp";
+      }, 1000);
+    }, 4000);
+  </script>
+</head>
+
+<body>
+  <div class="thankyou-box">
+    <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo">
+    <h1>Thank You for Booking!</h1>
+    <p>We’ve received your request — our team will confirm via Messenger shortly 🌺</p>
+  </div>
+
+  <!-- 🧡 Sticky Orange Messenger Button -->
+  <a href="https://m.me/lvbeachcamp" target="_blank" class="sticky-btn">Message Us Now</a>
+
+  <!-- 🌴 Footer -->
+  <footer>
+    © 2025 LV Beach Camp | Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte<br>
+    Powered by 
+    <a href="https://www.facebook.com/svpfunnels" target="_blank">SVP Funnels</a> 
+    & 
+    <a href="https://tinyteamstudio.online/" target="_blank">Tiny Team Digital Studio</a>
+  </footer>
+</body>
+</html>
