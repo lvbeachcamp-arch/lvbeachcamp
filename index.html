@@ -1,65 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LV Beach Camp | Home</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LV Beach Camp | Hinunangan, Southern Leyte</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- 🧭 Navigation -->
-  <nav class="navbar">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="accommodation.html">Accommodation</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="booking.html">Booking</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<!-- ================= NAVBAR ================= -->
+<header class="nav">
+  <div class="container inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpg" alt="LV Beach Camp logo">
+      <span class="name">LV Beach Camp</span>
+    </a>
+    <nav class="menu">
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Rooms</a>
+      <a href="#islands">Islands</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="booking.html">Reserve Your Spot</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- 🏖️ Hero -->
-  <section class="hero">
-    <div class="content">
-      <h1>Welcome to LV Beach Camp</h1>
-      <p>Your perfect tropical getaway in Hinunangan, Southern Leyte 🌴</p>
-      <a href="booking.html" class="btn">Plan Your Stay</a>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="content container">
+    <h1>Relax. Recharge. Reconnect.</h1>
+    <p class="tag">Your beachfront escape in Hinunangan, Southern Leyte</p>
+    <div class="actions">
+      <a class="btn primary" href="booking.html">Start Your Getaway</a>
+      <a class="btn ghost" href="#islands">Explore Islands</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 🏕️ Room Section -->
-  <section class="rooms">
-    <h2>Our Rooms</h2>
-    <div class="room-grid">
-      <img src="images/rooms/rooma.jpg" alt="Room A">
-      <img src="images/rooms/bahaykubo.jpg" alt="Bahay Kubo">
-      <img src="images/rooms/mediumcampingtent.jpg" alt="Medium Camping Tent">
-      <img src="images/rooms/teepee.jpg" alt="Teepee Tent">
+<!-- ================= ROOMS ================= -->
+<section class="section">
+  <div class="container">
+    <h2 class="title">Stay Your Way</h2>
+    <p class="subtitle">Cozy huts, tents, and rooms by the sea</p>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="image"><img src="images/rooms/teepee.jpg" alt="Teepee House"></div>
+        <div class="body">
+          <h3>Teepee House</h3>
+          <p class="meta">2 pax • Beachfront • Fan / optional A/C</p>
+          <div class="actions"><a class="btn primary" href="booking.html">Start Your Getaway</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="image"><img src="images/rooms/rooma.jpg" alt="Room A/B"></div>
+        <div class="body">
+          <h3>Rooms A &amp; B</h3>
+          <p class="meta">2–6 pax • A/C • Private T&amp;B</p>
+          <div class="actions"><a class="btn primary" href="booking.html">Start Your Getaway</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="image"><img src="images/rooms/mediumcampingtent.jpg" alt="Camping Tent"></div>
+        <div class="body">
+          <h3>Camping Tents</h3>
+          <p class="meta">Small / Medium • With bedding</p>
+          <div class="actions"><a class="btn primary" href="booking.html">Start Your Getaway</a></div>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 🍽️ Menu & Rates Section (2 Rows) -->
-  <section class="menu-rates">
-    <h2>Menu & Room Rates</h2>
-    <div class="menu-rates-grid">
-      <div class="menu-item">
-        <img src="images/menu/basicfoodmenu.jpg" alt="Food Menu">
-      </div>
-      <div class="menu-item">
-        <img src="images/rooms/newroomrates.jpg" alt="Room Rates">
-      </div>
+<!-- ================= ISLANDS ================= -->
+<section id="islands" class="section island-section">
+  <div class="container">
+    <h2 class="title">Island Tour Packages</h2>
+    <p class="subtitle">Experience the beauty beyond the shore</p>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="image"><img src="images/islands/blue-lagoon.jpg" alt="Blue Lagoon – San Pedro Island"></div>
+        <div class="body">
+          <h3>Blue Lagoon (San Pedro Island)</h3>
+          <p class="meta">Half-day / Full-day • Boat • Guide • Fees</p>
+          <div class="actions">
+            <a class="btn ghost" href="gallery.html#islands">View Gallery</a>
+            <a class="btn primary" href="booking.html">Book Your Adventure</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="image"><img src="images/islands/san-pablo.jpg" alt="San Pablo Island"></div>
+        <div class="body">
+          <h3>San Pablo Island Adventure</h3>
+          <p class="meta">Half-day / Full-day • Boat • Guide • Fees</p>
+          <div class="actions">
+            <a class="btn ghost" href="gallery.html#islands">View Gallery</a>
+            <a class="btn primary" href="booking.html">Book Your Adventure</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="image split-img">
+          <img src="images/islands/blue-lagoon.jpg" alt="Blue Lagoon">
+          <img src="images/islands/san-pablo.jpg" alt="San Pablo Island">
+        </div>
+        <div class="body">
+          <h3>Two-Island Hop</h3>
+          <p class="meta">Full-day combo • Best for groups</p>
+          <div class="actions">
+            <a class="btn ghost" href="gallery.html#islands">View Gallery</a>
+            <a class="btn primary" href="booking.html">Book Your Adventure</a>
+          </div>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 🌊 Footer -->
-  <footer>
-    <p>© 2025 LV Beach Camp. All Rights Reserved.</p>
-    <p>Website created by 
-      <a href="https://www.facebook.com/svpfunnels/" target="_blank">SVP Funnels</a> 
-      in collaboration with 
-      <a href="https://www.facebook.com/profile.php?id=61571330212081" target="_blank">Tiny Team Digital Studio</a> 🌴
-    </p>
-  </footer>
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container foot">
+    <small>© 2025 LV Beach Camp — Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte 6608</small>
+    <div class="actions">
+      <a class="btn ghost" href="https://m.me/lvbeachcamp" target="_blank">Message Us</a>
+      <a class="btn primary" href="booking.html">Reserve Your Spot</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
