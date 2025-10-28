@@ -71,7 +71,20 @@ a{text-decoration:none;color:inherit}
 .card h3{font-family:'Merienda',cursive;color:var(--deepbrown)}
 
 /* CONTACT */
-.contact-grid{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+/* CONTACT GRID CENTER FIX */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  align-items: start;
+  gap: 22px;
+  text-align: left;
+}
+.contact-grid .card {
+  width: 100%;
+  max-width: 500px;
+}
+
 .map iframe{border-radius:18px}
 
 /* FOOTER */
