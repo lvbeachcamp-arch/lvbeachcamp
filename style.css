@@ -244,3 +244,17 @@ footer a:hover{text-decoration:underline}
 .subtitle {
   color: #4E342E; /* deep brown for better contrast */
 }
+/* === FINAL OVERRIDES FOR HEADINGS === */
+:root { --deepbrown: #4E342E; }
+
+.title,
+.subtitle {
+  color: var(--deepbrown) !important;
+}
+
+/* Hero heading & tagline */
+.hero h1,
+.hero .subtitle,
+.hero p {
+  color: var(--deepbrown) !important;
+}
