@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>LV Beach Camp | Hinunangan, Southern Leyte</title>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 🌅 NAVIGATION -->
+  <!-- 🌴 NAVIGATION -->
   <header class="nav">
     <div class="container inner">
       <a href="#" class="brand">
-        <img src="images/branding/logo.jpg" alt="LV Beach Camp logo" class="small-logo">
-        <span class="name">LV Beach Camp</span>
+        <img src="images/branding/logo.jpg" alt="LV Beach Camp Logo" class="logo">
+        <span>LV Beach Camp</span>
       </a>
       <nav class="menu">
         <a href="#rooms">Stay</a>
@@ -25,118 +29,152 @@
     </div>
   </header>
 
-  <!-- 🌴 HERO -->
-  <section class="hero clean">
+  <!-- 🌅 HERO -->
+  <section class="hero fade-in">
     <div class="container">
       <h1>Welcome to LV Beach Camp</h1>
       <p>Your beachfront escape in Hinunangan, Southern Leyte</p>
-      <a class="btn primary" href="https://m.me/lvbeachcamp" target="_blank">Book Your Stay</a>
+      <a href="https://m.me/lvbeachcamp" target="_blank" class="btn primary large">Book Now</a>
     </div>
   </section>
 
-  <!-- 🏕️ ROOMS SECTION -->
-  <section id="rooms" class="section orange-bg">
+  <!-- 🏝️ BANNER -->
+  <section class="banner fade-in">
+    <div class="container">
+      <img src="images/branding/banner.jpg" alt="LV Beach Camp Banner" class="banner-img">
+    </div>
+  </section>
+
+  <!-- 🏕️ STAY YOUR WAY -->
+  <section id="rooms" class="section orange fade-in">
     <div class="container">
       <h2 class="title">Stay Your Way</h2>
       <p class="subtitle">Choose from cozy huts, rooms, or tents by the sea</p>
 
       <div class="grid grid-3">
-        <div class="card"><img src="images/rooms/roomb.jpg" alt="Room B" onclick="openModal(this.src)"></div>
-        <div class="card"><img src="images/rooms/teepee.jpg" alt="Teepee" onclick="openModal(this.src)"></div>
-        <div class="card"><img src="images/rooms/bahaykubo.jpg" alt="Bahay Kubo" onclick="openModal(this.src)"></div>
-        <div class="card"><img src="images/rooms/mediumcampingtent.jpg" alt="Camping Tent" onclick="openModal(this.src)"></div>
-       
+        <div class="card"><img src="images/rooms/roomb.jpg" alt="Room B" onclick="openLightbox(this.src)"></div>
+        <div class="card"><img src="images/rooms/teepee.jpg" alt="Teepee" onclick="openLightbox(this.src)"></div>
+        <div class="card"><img src="images/rooms/bahaykubo.jpg" alt="Bahay Kubo" onclick="openLightbox(this.src)"></div>
+        <div class="card"><img src="images/rooms/mediumcampingtent.jpg" alt="Camping Tent" onclick="openLightbox(this.src)"></div>
       </div>
     </div>
   </section>
 
-  <!-- 🏝️ ISLAND PACKAGES -->
-  <section id="islands" class="section white-bg">
+  <!-- 🌊 ISLAND PACKAGES -->
+  <section id="islands" class="section white fade-in">
     <div class="container">
       <h2 class="title">Island Tour Packages</h2>
       <p class="subtitle">Experience San Pedro & San Pablo Islands</p>
+
       <div class="grid grid-2">
-        <div class="card"><img src="images/islands/san-pedro-island.jpg" alt="San Pedro Island" onclick="openModal(this.src)"></div>
-        <div class="card"><img src="images/islands/san-pablo-island.jpg" alt="San Pablo Island" onclick="openModal(this.src)"></div>
+        <div class="card"><img src="images/islands/san-pedro-island.jpg" alt="San Pedro Island" onclick="openLightbox(this.src)"></div>
+        <div class="card"><img src="images/islands/san-pablo-island.jpg" alt="San Pablo Island" onclick="openLightbox(this.src)"></div>
       </div>
     </div>
   </section>
 
-  <!-- 🍽️ MENU & ROOM RATES -->
-  <section id="menu" class="section orange-bg">
+  <!-- 🍽️ MENU & RATES -->
+  <section id="menu" class="section orange fade-in">
     <div class="container">
       <h2 class="title">Menu & Room Rates</h2>
       <p class="subtitle">Check out our offerings and affordable stays</p>
 
       <div class="grid grid-2">
-        <div class="card"><img src="images/menu/basicfoodmenu.jpg" alt="Food Menu" onclick="openModal(this.src)"></div>
-        <div class="card"><img src="images/rooms/newroomrates.jpg" alt="Room Rates" onclick="openModal(this.src)"></div>
+        <div class="card"><img src="images/menu/basicfoodmenu.jpg" alt="Food Menu" onclick="openLightbox(this.src)"></div>
+        <div class="card"><img src="images/rooms/newroomrates.jpg" alt="Room Rates" onclick="openLightbox(this.src)"></div>
       </div>
     </div>
   </section>
 
   <!-- 💸 PAYMENT OPTIONS -->
-  <section class="section white-bg">
+  <section class="section white fade-in">
     <div class="container">
       <h2 class="title">Payment Options</h2>
+      <p class="subtitle">We accept multiple payment channels for your convenience</p>
+
       <div class="grid grid-4">
-        <div class="card"><img src="images/qr/qr-gcash.png" alt="GCash QR" onclick="openModal(this.src)"></div>
-        <div class="card"><img src="images/qr/qr-paymaya.png" alt="PayMaya QR" onclick="openModal(this.src)"></div>
-        <div class="card"><img src="images/qr/qr-pnb.png" alt="PNB QR" onclick="openModal(this.src)"></div>
-        <div class="card"><img src="images/qr/qr-bdo.png" alt="BDO QR" onclick="openModal(this.src)"></div>
+        <div class="card"><img src="images/qr/qr-gcash.png" alt="GCash QR" onclick="openLightbox(this.src)"></div>
+        <div class="card"><img src="images/qr/qr-paymaya.png" alt="PayMaya QR" onclick="openLightbox(this.src)"></div>
+        <div class="card"><img src="images/qr/qr-pnb.png" alt="PNB QR" onclick="openLightbox(this.src)"></div>
+        <div class="card"><img src="images/qr/qr-bdo.png" alt="BDO QR" onclick="openLightbox(this.src)"></div>
       </div>
     </div>
   </section>
 
   <!-- 📍 CONTACT -->
-  <section id="contact" class="section orange-bg">
+  <section id="contact" class="section orange fade-in">
     <div class="container">
       <h2 class="title">Contact Us</h2>
       <p class="subtitle">We respond fastest on Messenger 💬</p>
 
-      <div class="card contact-card">
-        <p>📍 Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</p>
-        <p>📞 0946-291-1866</p>
-        <p>📧 lvbeachcamp@gmail.com</p>
-        <a class="btn primary" href="https://m.me/lvbeachcamp" target="_blank">Message Us on Messenger</a>
-      </div>
+      <div class="grid contact-grid">
+        <div class="card">
+          <div class="body">
+            <p>📍 Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</p>
+            <p>📞 0946-291-1866</p>
+            <p>📧 lvbeachcamp@gmail.com</p>
+            <a href="https://m.me/lvbeachcamp" target="_blank" class="btn primary">Message Us on Messenger</a>
+          </div>
+        </div>
 
-      <div class="map">
-        <iframe title="LV Beach Camp Map"
-          src="https://www.google.com/maps?q=LV+Beach+Camp+Hinunangan&output=embed"
-          width="100%" height="360" style="border:0" loading="lazy">
-        </iframe>
+        <div class="card map">
+          <iframe title="LV Beach Camp Map"
+            src="https://www.google.com/maps?q=LV+Beach+Camp+Hinunangan&output=embed"
+            width="100%" height="360" style="border:0" loading="lazy">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 🌊 FOOTER -->
+  <!-- 🌺 FOOTER -->
   <footer>
-    <div class="container">
-      <small>© 2025 LV Beach Camp — Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</small>
-      <p class="powered">Powered by</p>
+    <div class="container foot">
+      <p>© 2025 LV Beach Camp — Purok Santol, Brgy. Ingan, Hinunangan, Southern Leyte</p>
+      <p>Powered by</p>
       <p><a href="https://www.facebook.com/svpfunnels" target="_blank">SVP Funnels</a></p>
       <p><a href="https://tinyteamstudio.online/" target="_blank">Tiny Team Digital Studio</a></p>
     </div>
   </footer>
 
-  <!-- 💬 FIXED MESSENGER BUTTON -->
-  <a href="https://m.me/lvbeachcamp" target="_blank" class="msg-btn">💬 Message Us on Messenger</a>
+  <!-- 💬 MESSENGER BAR -->
+  <a href="https://m.me/lvbeachcamp" target="_blank" class="messenger-bar">💬 Message Us Now</a>
 
-  <!-- 🪸 IMAGE MODAL -->
-  <div id="imgModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
-    <a class="btn primary modal-btn" href="https://m.me/lvbeachcamp" target="_blank">Book Us Now</a>
+  <!-- 🪸 LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <img id="lightbox-img" src="" alt="Full view">
+      <div class="lightbox-actions">
+        <a href="https://m.me/lvbeachcamp" target="_blank" class="btn primary">Book Us Now</a>
+      </div>
+    </div>
   </div>
 
+  <!-- ✨ SCRIPT -->
   <script>
-    function openModal(src) {
-      document.getElementById("imgModal").style.display = "flex";
-      document.getElementById("modalImg").src = src;
+    // Fade-in effect
+    document.addEventListener("DOMContentLoaded", () => {
+      const fadeEls = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      fadeEls.forEach(el => observer.observe(el));
+    });
+
+    // Lightbox functions
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').setAttribute('aria-hidden', 'false');
     }
-    function closeModal() {
-      document.getElementById("imgModal").style.display = "none";
+    function closeLightbox() {
+      document.getElementById('lightbox').setAttribute('aria-hidden', 'true');
     }
   </script>
 
