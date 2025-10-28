@@ -253,3 +253,16 @@ footer .foot {
   .nav .inner { flex-wrap: wrap; gap: 10px; }
   .foot { grid-template-columns: 1fr; text-align: center; }
 }
+
+.small-logo {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.footer-logo {
+  height: 26px;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
