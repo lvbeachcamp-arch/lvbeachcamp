@@ -258,3 +258,10 @@ footer a:hover{text-decoration:underline}
 .hero p {
   color: var(--deepbrown) !important;
 }
+
+/* === FINAL FIX: HERO TEXT COLOR OVERRIDE === */
+.hero h1,
+.hero p,
+.hero .subtitle {
+  color: #4E342E !important; /* deep brown */
+}
