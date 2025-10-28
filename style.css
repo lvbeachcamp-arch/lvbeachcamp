@@ -404,3 +404,32 @@ footer .foot { display: grid; gap: 6px; justify-items: center; }
   border-radius: 12px;
 }
 
+/* === UNIVERSAL MOBILE GRID FIX === */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  .card img {
+    height: 200px !important;
+    object-fit: cover !important;
+  }
+}
+
+/* Fix card overflow on narrow screens */
+.card {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* Ensure no horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
